@@ -255,6 +255,8 @@ echo $!                   # 查看最近调用的后台任务进程号
 echo $?                   # 查看最近一条命令的返回码
 export VARNAME=value      # 设置环境变量（将会影响到子进程）
 
+export http_proxy={url}   # 设置http代理，注意也会影响子进程
+
 array[0]=valA             # 定义数组
 array[1]=valB
 array[2]=valC
