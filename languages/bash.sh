@@ -158,6 +158,8 @@ pstree {user}             # 进程树列出某用户的进程
 pstree -u                 # 树形列出所有进程以及所属用户
 pgrep {procname}          # 搜索名字匹配的进程的 pid，比如 pgrep apache2
 
+readlink -f /proc/{pid}/exe # 查找运行中进程的程序路径
+
 kill {pid}                # 结束进程
 kill -9 {pid}             # 强制结束进程，9/SIGKILL 是强制不可捕获结束信号
 kill -KILL {pid}          # 强制执行进程，kill -9 的另外一种写法
