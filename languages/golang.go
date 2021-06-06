@@ -43,6 +43,7 @@ go mod init                                           // 初始化当前文件�
 go mod download                                       // 下载依赖的module到本地
 go mod tidy                                           // 增加缺少的module，删除无用的module
 go mod vendor 					                              // 将依赖复制到vendor下
+go mod edit -replace="github.com/someone/repo@v0.0.0=github.com/you/repo@v1.1.1" // 批量替换某个仓库的URL到另一个，比如替换到自己的fork
 文件go.mod                                             // 依赖列表和版本约束
 文件go.sum                                             // 记录module文件hash值，用于安全校验
 
